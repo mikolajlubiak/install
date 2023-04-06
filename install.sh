@@ -26,9 +26,6 @@ ln -s /mnt/HDD/key/ssh.public.ssh $HOME/.ssh/id_ed25519.pub
 /mnt/HDD/notes/hwaccel.sh
 sudo groupadd $USER
 sudo usermod -aG wheel,rfkill,sys,$USER,lp,video,network,storage,wheel,audio $USER
-mw -a funtoomen@disroot.org -i disroot.org -I 993 -s disroot.org -S 465 -x $'PASSWORD'
-mw -a mikolajl@danwin1210.de -i danwin1210.de -I 993 -s danwin1210.de -S 465 -x $'PASSWORD'
-mw -a nofiles@airmail.cc -i mail.cock.li -I 993 -s mail.cock.li -S 465 -x $'PASSWORD'
 echo $'alias mpv="mpv --hwdec=auto"' >> $HOME/.config/shell/aliasrc
 echo $'alias ffmpeg="ffmpeg -threads 4 -vaapi_device /dev/dri/renderD129 -hwaccel vaapi -hwaccel_output_format vaapi"' >> $HOME/.config/shell/aliasrc
 echo $'
